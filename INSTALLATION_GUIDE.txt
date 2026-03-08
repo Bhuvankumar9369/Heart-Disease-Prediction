@@ -1,0 +1,61 @@
+Heart Disease Prediction Project - Installation & Run Guide
+=============================================================
+
+This guide will help you set up and run the Heart Disease Prediction project on your local machine.
+
+1. Prerequisites
+----------------
+- Windows, macOS, or Linux
+- Internet connection
+- Basic command line knowledge
+
+2. Install Anaconda (Recommended)
+---------------------------------
+Anaconda is a popular Python distribution that simplifies package management and deployment.
+
+- Download Anaconda from: https://www.anaconda.com/products/distribution
+- Run the installer and follow the instructions for your OS.
+- After installation, open the Anaconda Prompt (Windows) or terminal (macOS/Linux).
+
+3. Set Up the Project Environment
+---------------------------------
+- Navigate to the project folder:
+  cd "path/to/Heart-Disease"
+
+- Create a new environment (optional but recommended):
+  conda create -n heart_env python=3.10
+  conda activate heart_env
+
+4. Install Required Libraries
+----------------------------
+- Install dependencies using pip:
+  pip install -r requirements.txt
+
+- Install scikit-learn version 0.24.2:
+  pip install scikit-learn==0.24.2
+
+5. Running the Application
+--------------------------
+- To start the Flask web app:
+  python App.py
+
+- The app will typically run at http://127.0.0.1:5000/
+- Open this URL in your web browser to use the application.
+
+6. Using Jupyter Notebook (Optional)
+------------------------------------
+- To explore or run the Jupyter notebook:
+  jupyter notebook
+- Open 'Heart disease.ipynb' from the browser interface.
+
+7. Additional Notes
+-------------------
+- If you encounter issues with missing packages, ensure your environment is activated and run the install command again.
+- For deployment (e.g., Heroku), refer to the Procfile and platform-specific documentation.
+
+8. Exiting the Environment
+--------------------------
+- To deactivate the conda environment:
+  conda deactivate
+
+For further help, consult the README.md or contact the project maintainer.

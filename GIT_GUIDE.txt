@@ -1,0 +1,57 @@
+# How to Push Your Project to GitHub
+
+Follow these steps to upload your Heart Disease project to GitHub from scratch:
+
+1. Create a GitHub Account (if you don't have one)
+--------------------------------------------------
+- Go to https://github.com and sign up for a free account.
+
+2. Create a New Repository on GitHub
+------------------------------------
+- Click the "+" icon (top right) > "New repository"
+- Name your repo (e.g., Heart-Disease)
+- (Optional) Add a description
+- Choose Public or Private
+- Do NOT initialize with a README (you already have one)
+- Click "Create repository"
+
+3. Install Git (if not already installed)
+-----------------------------------------
+- Download from https://git-scm.com/downloads
+- Install with default options
+
+4. Open Terminal/Anaconda Prompt in Your Project Folder
+-------------------------------------------------------
+- Navigate to your project directory:
+  cd "D:/Vinay Files/Heart-Disease"
+
+5. Initialize Git and Add Files
+-------------------------------
+- Initialize git:
+  git init
+- Add all files:
+  git add .
+- Commit your changes:
+  git commit -m "Initial commit"
+
+6. Link to Your GitHub Repository
+---------------------------------
+- Copy the repo URL from GitHub (e.g., https://github.com/yourusername/Heart-Disease.git)
+- Add the remote:
+  git remote add origin https://github.com/yourusername/Heart-Disease.git
+
+7. Push to GitHub
+-----------------
+- Push your code (for the first push, set the upstream):
+  git branch -M main
+  git push -u origin main
+
+8. Done!
+--------
+- Refresh your GitHub repo page to see your files online.
+
+**Tip:**
+- For future changes: use `git add .`, `git commit -m "message"`, and `git push`.
+- If you get authentication errors, log in to GitHub or use a personal access token.
+
+For more help, see https://docs.github.com/en/get-started/quickstart
